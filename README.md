@@ -36,3 +36,9 @@ Display file permission bits in octal
 stat -c "%a %n" <filename>
 ```
 
+Copy output of command to clipboard
+
+```bash
+pwd | xclip -i 
+```
+
