@@ -30,3 +30,9 @@ Find folder and delete its content
 find -type d -name "foldername" -exec rm -rf {} \;
 ```
 
+Display file permission bits in octal
+
+```bash
+stat -c "%a %n" <filename>
+```
+
