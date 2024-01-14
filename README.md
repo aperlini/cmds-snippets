@@ -30,6 +30,12 @@ Find folder and delete its content
 find -type d -name "foldername" -exec rm -rf {} \;
 ```
 
+Find modified files at a certain date 
+
+```bash
+find -type f -name "*.cpp" -newermt yyyy-mm-dd
+```
+
 Display file permission bits in octal
 
 ```bash
@@ -41,4 +47,5 @@ Copy output of command to clipboard
 ```bash
 pwd | xclip -i 
 ```
+
 
