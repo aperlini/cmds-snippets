@@ -36,16 +36,27 @@ Find modified files at a certain date
 find -type f -name "*.cpp" -newermt yyyy-mm-dd
 ```
 
-Display file permission bits in octal
-
-```bash
-stat -c "%a %n" <filename>
-```
-
 Copy output of command to clipboard
 
 ```bash
 pwd | xclip -i 
 ```
 
+Display file permission bits in octal
+
+```bash
+stat -c "%a %n" <filename>
+```
+
+Display lines (range) in file
+
+```bash
+sed -n 1,10d file.txt
+```
+
+Delete lines (range) in file
+
+```bash
+sed -i 1,10d file.txt # option -i : --in-place
+```
 
