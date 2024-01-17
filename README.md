@@ -12,6 +12,12 @@ Generate *html* file from *RTF* files based on their basename and content
 for f in *.rtf; do echo -E "$(basename -s .rtf "## $f") $(unrtf --quiet "$f")" >> index.html; done
 ```
 
+Create the same file in all subdirectories
+
+```bash
+for d in ./*/; do cd "$d" && touch file.txt && cd ..; done
+```
+
 Find and print all files starting with ".DS_" 
 
 ```bash
