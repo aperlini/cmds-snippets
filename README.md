@@ -57,7 +57,7 @@ stat -c "%a %n" <filename>
 Display lines (range) in file
 
 ```bash
-sed -n 1,10d file.txt
+sed -n 1,10p file.txt
 ```
 
 Delete lines (range) in file
