@@ -1,4 +1,6 @@
-# Bash snippets
+# Commands Snippets
+
+> commands history : things I tend to forget and look for afterward
 
 Rename and remove *underscore* from files in current folder
 
@@ -64,5 +66,11 @@ Delete lines (range) in file
 
 ```bash
 sed -i 1,10d file.txt # option -i : --in-place
+```
+
+Saving intermediate files from compilation (.i, .s, .o) using *gcc*
+
+```bash
+gcc main.c --save-temps -o main
 ```
 
