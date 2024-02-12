@@ -74,3 +74,15 @@ Saving intermediate files from compilation (.i, .s, .o) using *gcc*
 gcc main.c --save-temps -o main
 ```
 
+Remove remote origin of git repository
+
+```bash
+git remote remove origin
+```
+
+Change remote origin of git repository
+
+```bash
+git remote add origin git@github.com:User/repo.git
+```
+
