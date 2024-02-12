@@ -2,6 +2,16 @@
 
 > commands history : things I tend to forget and look for afterward
 
+## Compilation
+
+Saving intermediate files from compilation (.i, .s, .o) using *gcc*
+
+```bash
+gcc main.c --save-temps -o main
+```
+
+## File manipulations
+
 Rename and remove *underscore* from files in current folder
 
 ```bash
@@ -68,11 +78,7 @@ Delete lines (range) in file
 sed -i 1,10d file.txt # option -i : --in-place
 ```
 
-Saving intermediate files from compilation (.i, .s, .o) using *gcc*
-
-```bash
-gcc main.c --save-temps -o main
-```
+## Git
 
 Remove remote origin of git repository
 
@@ -84,5 +90,15 @@ Change remote origin of git repository
 
 ```bash
 git remote add origin git@github.com:User/repo.git
+```
+
+## Python
+
+Setup environment and install project dependencies w/ pip
+
+```bash
+python3 -m venv venv # will create target dir 'venv' for virtual env
+source venv/bin/activate
+python3 -m pip install -r requirements.txt
 ```
 
