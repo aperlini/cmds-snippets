@@ -2,6 +2,17 @@
 
 > commands history : things I tend to forget and look for afterward
 
+## Assembly
+
+### x86_64
+
+Using *nasm* to assemble and GNU linker to generate executable
+
+``` bash
+nasm -f elf64 <prog>.asm -g # -f = format
+ld <prog>.o -o <prog>
+```
+
 ## Compilation
 
 Saving intermediate files from compilation (.i, .s, .o) using *gcc*
