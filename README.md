@@ -2,6 +2,16 @@
 
 > commands history : things I tend to forget and look for afterward
 
+## Archives
+
+Extract compressed archives with correct options
+
+```bash
+tar -xjf  comp-archive-123.tar.bz2 # -j (bzip2)
+tar -xvzf comp-archive-123.tar.gz  # -z (gzip)
+tar -xf   comp-archive-123.tar.xz
+```
+
 ## Assembly
 
 ### x86_64
