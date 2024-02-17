@@ -103,6 +103,27 @@ Change remote origin of git repository
 git remote add origin git@github.com:User/repo.git
 ```
 
+## ImageMagick
+
+Resize image while keeping (height or width) ratio
+
+```bash
+mogrify -resize x450 my_img.jpg # preserve height
+mogrify -resize 850x my_img.jpg # preserve width
+```
+
+Crop image
+
+```bash
+mogrify -crop 100x100+0+0 my_img.jpg # crop 100x100px from x=0, y=0
+```
+
+Convert format
+
+```bash
+mogrify -format jpeg image.ppm # from .ppm to .jpeg
+```
+
 ## Python
 
 Setup environment and install project dependencies w/ pip
