@@ -31,6 +31,20 @@ Saving intermediate files from compilation (.i, .s, .o) using *gcc*
 gcc main.c --save-temps -o main
 ```
 
+## Debugging
+
+### GDB
+
+Using GNU debugger to inspect code in *asm*
+
+```bash
+gcc prog.c -o prog -g 	# compile source using debugging options
+gdb ./prog 			  	# start gdb
+(gdb) b main 		  	# set breakpoint at main entry point
+(gdb) run 		 	  	# start program
+(gdb) layout asm		# apply the asm layout for inspection
+```
+
 ## File manipulations
 
 Rename and remove *underscore* from files in current folder
