@@ -31,6 +31,17 @@ Saving intermediate files from compilation (.i, .s, .o) using *gcc*
 gcc main.c --save-temps -o main
 ```
 
+Compile and link program w/ static library
+
+```bash
+gcc main.c -o main -I libs -L libs -labcd
+# .
+# ├── libs
+# │   ├── libabcd.a
+# │   └── libabcd.h
+# └── main.c
+```
+
 ## Debugging
 
 ### GDB
@@ -38,11 +49,11 @@ gcc main.c --save-temps -o main
 Using GNU debugger to inspect code in *asm*
 
 ```bash
-gcc prog.c -o prog -g 	# compile source using debugging options
-gdb ./prog 			  	# start gdb
-(gdb) b main 		  	# set breakpoint at main entry point
-(gdb) run 		 	  	# start program
-(gdb) layout asm		# apply the asm layout for inspection
+gcc prog.c -o prog -g # compile source using debugging options
+gdb ./prog # start gdb
+(gdb) b main # set breakpoint at main entry point
+(gdb) run # start program
+(gdb) layout asm # apply the asm layout for inspection
 ```
 
 ## File manipulations
