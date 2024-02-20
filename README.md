@@ -169,3 +169,12 @@ source venv/bin/activate
 python3 -m pip install -r requirements.txt
 ```
 
+## Tmux
+
+to install new plugins, edit `.tmux.conf` :
+
+```bash
+set -g @plugin 'plugin/path'
+```
+
+then `prefix` + `I`  to fetch the plugin
