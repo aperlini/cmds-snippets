@@ -171,6 +171,28 @@ python3 -m pip install -r requirements.txt
 
 ## Tmux
 
+### Basic usage
+
+ `ctrl` + `b`  : default prefix
+
+**Panel split**
+
+`prefix` + `%` : vertical split 
+
+`prefix` + `"` : horizontal split
+
+`prefix` + `q` : panel number
+
+`prefix` + `o` : switch between panels
+
+`prefix`+ `alt` + `↑ ↓ ← →` : to increase / decrease panel size 
+
+`prefix` + `z` : zoom / de-zoom
+
+`prefix` + `x` : close panel
+
+### Plugins
+
 to install new plugins, edit `.tmux.conf` :
 
 ```bash
