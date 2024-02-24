@@ -169,6 +169,43 @@ source venv/bin/activate
 python3 -m pip install -r requirements.txt
 ```
 
+## Scripts
+
+### Adding custom commands (from bash scripts)
+
+Add new script inside `/home/user/` dedicated directory
+
+```bash 
+├── scripts
+└────── custom.sh
+```
+
+add execution / read permissions
+
+```bash
+chmod u+rx custom.sh
+```
+
+create symlink from `.local/bin` folder to make script available from the command line : 
+
+```bash
+ln -s /home/user/scripts/custom.sh custom.sh
+```
+
+declare function inside `/home/user/.bash_functions`: 
+
+```bash
+function call_script {
+	~/.local/bin/custom.sh
+}
+```
+
+then source : 
+
+```bash
+source .bash_functions
+```
+
 ## Tmux
 
 ### Basic usage
