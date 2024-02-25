@@ -159,6 +159,12 @@ Convert format
 mogrify -format jpeg image.ppm # from .ppm to .jpeg
 ```
 
+Display image size infos
+
+```bash
+identify -format "%wx%h" img.jpg
+```
+
 ## Python
 
 Setup environment and install project dependencies w/ pip
@@ -166,7 +172,7 @@ Setup environment and install project dependencies w/ pip
 ```bash
 python3 -m venv venv # will create target dir 'venv' for virtual env
 source venv/bin/activate
-python3 -m pip install -r requirements.txt
+pip install -r requirements.txt
 ```
 
 Save current state of virtual environment in `requirements.txt` : 
