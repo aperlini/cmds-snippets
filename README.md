@@ -169,6 +169,12 @@ source venv/bin/activate
 python3 -m pip install -r requirements.txt
 ```
 
+Save current state of virtual environment in `requirements.txt` : 
+
+```bash
+pip freeze >> requirements.txt
+```
+
 ## Scripts
 
 ### Adding custom commands (from bash scripts)
