@@ -42,6 +42,14 @@ gcc main.c -o main -I libs -L libs -labcd
 # └── main.c
 ```
 
+## Curl
+
+Saving remote file in the current directory
+
+```bash
+curl -O https://.../resource.jpg
+```
+
 ## Debugging
 
 ### GDB
