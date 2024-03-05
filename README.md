@@ -42,14 +42,6 @@ gcc main.c -o main -I libs -L libs -labcd
 # └── main.c
 ```
 
-## Curl
-
-Saving remote file in the current directory
-
-```bash
-curl -O https://.../resource.jpg
-```
-
 ## Debugging
 
 ### GDB
@@ -189,6 +181,14 @@ Save current state of virtual environment in `requirements.txt` :
 pip freeze >> requirements.txt
 ```
 
+## Resolution
+
+Display current screen resolution
+
+```bash
+xdpyinfo | grep "dimensions"
+```
+
 ## Scripts
 
 ### Adding custom commands (from bash scripts)
@@ -257,3 +257,13 @@ set -g @plugin 'plugin/path'
 ```
 
 then `prefix` + `I`  to fetch the plugin
+
+## Wget
+
+Saving remote file in specified directory
+
+```bash
+wget https://.../resource.jpg -P /to/directory/path
+```
+
+## 
