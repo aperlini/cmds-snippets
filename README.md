@@ -226,6 +226,14 @@ then source :
 source .bash_functions
 ```
 
+## SSH pubkey
+
+copy (*rsa*) public key content to clipboard
+
+```bash
+xclip -sel clip < ~/.ssh/id_rsa.pub # shorthand for : -select clipboard
+```
+
 ## Tmux
 
 ### Basic usage
@@ -266,4 +274,3 @@ Saving remote file in specified directory
 wget https://.../resource.jpg -P /to/directory/path
 ```
 
-## 
