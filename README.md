@@ -42,6 +42,16 @@ gcc main.c -o main -I libs -L libs -labcd
 # └── main.c
 ```
 
+## Databases
+
+sqlite3 usage
+
+```bash
+sqlite3 dbname.sqlite
+.schema # display database schema
+.exit
+```
+
 ## Debugging
 
 ### GDB
@@ -54,6 +64,14 @@ gdb ./prog # start gdb
 (gdb) b main # set breakpoint at main entry point
 (gdb) run # start program
 (gdb) layout asm # apply the asm layout for inspection
+```
+
+disassembly style
+
+```bash
+(gdb) show disassembly-flavor
+(gdb) set disassembly-flavor intel
+(gdb) set disassembly-flavor att
 ```
 
 ## File manipulations
