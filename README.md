@@ -74,6 +74,22 @@ disassembly style
 (gdb) set disassembly-flavor att
 ```
 
+## Docker
+
+### MySQL container
+
+Connect to MySQL container
+
+```bash
+docker exec -it <container_name> mysql -u<user> -p<pass>
+```
+
+Export database
+
+```bash
+docker exec -i <container_name> mysqldump -u<user> -p<pass> <db_name> > <backup_name>.sql
+```
+
 ## File manipulations
 
 Rename and remove *underscore* from files in current folder
