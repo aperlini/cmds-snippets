@@ -300,6 +300,14 @@ set -g @plugin 'plugin/path'
 
 then `prefix` + `I`  to fetch the plugin
 
+## Vim
+
+search and replace pattern (all occurences)
+
+```bash
+:%s/{find}/{replace}/g
+```
+
 ## Wget
 
 Saving remote file in specified directory
