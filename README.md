@@ -199,6 +199,22 @@ Display image size infos
 identify -format "%wx%h" img.jpg
 ```
 
+## Network
+
+### iproute2
+
+Display current available network interfaces
+
+```bash
+ip -c -br link
+```
+
+Display IPv4 addresses
+
+```bash
+ip -c -br -4 a
+```
+
 ## Python
 
 Setup environment and install project dependencies w/ pip
