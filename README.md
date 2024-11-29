@@ -87,7 +87,7 @@ docker exec -it <container_name> mysql -u<user> -p<pass>
 Export database
 
 ```bash
-docker exec -i <container_name> mysqldump -u<user> -p<pass> <db_name> > <backup_name>.sql
+docker exec -i <container_name> mysqldump --no-tablespaces -u<user> -p<pass> <db_name> > <backup_name>.sql
 ```
 
 ## File manipulations
@@ -170,6 +170,12 @@ Change remote origin of git repository
 
 ```bash
 git remote add origin git@github.com:User/repo.git
+```
+
+Changing commit message that hasn't been pushed
+
+```bash
+git commit --amend -m "modified commit msg"
 ```
 
 ## ImageMagick
