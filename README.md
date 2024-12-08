@@ -221,6 +221,33 @@ Display IPv4 addresses
 ip -c -br -4 a
 ```
 
+## OpenSSL
+
+Generate new private key
+
+```bash
+openssl genpkey -out <pri_key> \ 
+-algorithm RSA \
+-pkeyopt rsa_keygen_bits:<key-size> \
+-aes-256-cbc
+```
+
+> key is protected with passphrase using AES-256
+
+Derive public key
+
+```bash
+openssl rsa -in <pri_key> -pubout -out <pub_key>
+```
+
+Key structure information
+
+```bash
+openssl rsa -in <pri_key> -text -noout
+```
+
+> add `-pubin` params to specify public key
+
 ## Python
 
 Setup environment and install project dependencies w/ pip
