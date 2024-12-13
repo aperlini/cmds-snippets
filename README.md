@@ -205,6 +205,14 @@ Display image size infos
 identify -format "%wx%h" img.jpg
 ```
 
+Vertically stack images
+
+```bash
+convert <img-1> <img-2> -append <result-img>
+```
+
+> +append : to concatenate images horizontally
+
 ## Network
 
 ### iproute2
