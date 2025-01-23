@@ -333,6 +333,14 @@ copy (*rsa*) public key content to clipboard
 xclip -sel clip < ~/.ssh/id_rsa.pub # shorthand for : -select clipboard
 ```
 
+## Snap
+
+Updating snap store
+
+```bash
+snap-store --quit && sudo snap refresh snap-store
+```
+
 ## Tmux
 
 ### Basic usage
