@@ -213,6 +213,14 @@ convert <img-1> <img-2> -append <result-img>
 
 > +append : to concatenate images horizontally
 
+## Integrity check
+
+Compute SHA256 message digest to verify file integrity
+
+```bash
+echo "<filehash> <file>" | sha256sum --c
+```
+
 ## Network
 
 ### iproute2
