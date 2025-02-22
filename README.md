@@ -325,6 +325,19 @@ then source :
 source .bash_functions
 ```
 
+## Shred
+
+overwrite a file to hide its contents, and optionally delete it
+
+```bash
+shred -vzu -n <iter> <file>
+```
+
+> -v: verbose
+> -z: add final zero (to hide shredding)
+> -u: deallocate and remove after overwritting
+> -n: iterations
+
 ## SSH pubkey
 
 copy (*rsa*) public key content to clipboard
