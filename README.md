@@ -95,6 +95,12 @@ docker exec -i <container_name> mysqldump --no-tablespaces -u<user> -p<pass> <db
 Convert `.mov` to `.mp4`
 
 ```bash
+filename="<filename>"; ffmpeg -i $filename.mkv -c:v copy -c:a copy -progress - $filename.mp4
+```
+
+Convert `.mov` (from iphone) to `.mp4`
+
+```bash
 ffmpeg -i <video>.MOV -vcodec libx264 -profile:v main -level 3.1 -preset medium -crf 23 -x264-params ref=4 -acodec copy -movflags +faststart <output>.mp4
 ```
 
