@@ -90,6 +90,14 @@ Export database
 docker exec -i <container_name> mysqldump --no-tablespaces -u<user> -p<pass> <db_name> > <backup_name>.sql
 ```
 
+## FFmpeg
+
+Convert `.mov` to `.mp4`
+
+```bash
+ffmpeg -i <video>.MOV -vcodec libx264 -profile:v main -level 3.1 -preset medium -crf 23 -x264-params ref=4 -acodec copy -movflags +faststart <output>.mp4
+```
+
 ## File manipulations
 
 Rename and remove *underscore* from files in current folder
