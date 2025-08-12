@@ -1,6 +1,6 @@
 # Commands Snippets
 
-> commands history : things I tend to forget and look for afterward
+> frequently used, often forgotten
 
 ## Archives
 
